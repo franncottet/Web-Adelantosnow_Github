@@ -115,8 +115,8 @@ body {
     margin-right: 8em;
     margin-left: 8em;
     color: #000000;
-    max-width: 1400px;
-    
+    max-width: 1800px;
+    align-items: center;
     margin-top: 20rem;
 }
 
@@ -133,13 +133,27 @@ body {
     
 }
 
+.principal_texto h2:hover {
+    background: #ccc;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(15deg, #2F2F9E, #000000);
+    -webkit-background-clip: text;
+    transition: .1s;
+}
+
+
+
 .principal_texto p{
     margin-top: 10rem;
     text-align: center;
     font-size: 5rem;
     font-weight: 200;
     line-height: 5rem;
-    
+   
+}
+
+.principal_texto p:hover{
+    font-style: italic;
 }
 
 /*ATAJOS PARA EL USUARIO*/
