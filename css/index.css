@@ -175,16 +175,22 @@ body {
     height: 20rem;
     background-color:#2F2F9E;
     border-radius: 3rem;
-    
+    cursor: pointer;
     line-height: 20rem;
     
 }
 
-.box-resume_first h3{
+.box-resume_first h3 {
     
     margin: 0 auto;
     font-size: 5rem;
     font-weight: 200;
+    
+}
+
+.box-resume_first h3 a{
+    text-decoration: none;
+    color: #e7e7e7;
 }
 
 .box-resume_first :hover {
@@ -202,7 +208,7 @@ body {
     height: 20rem;
     background-color:#2F2F9E;
     border-radius: 3rem;
-    
+    cursor: pointer;
     line-height: 20rem;
 }
 
@@ -210,6 +216,11 @@ body {
     margin: 0 auto;
     font-size: 5rem;
     font-weight: 200;
+}
+
+.box-resume_second h3 a{
+    text-decoration: none;
+    color: #e7e7e7;
 }
 
 .box-resume_second :hover {
