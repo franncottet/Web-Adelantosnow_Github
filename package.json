@@ -1,0 +1,25 @@
+{
+  "name": "html_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1" ,
+    "build-sass": "node-sass --include-path scss sass/index.css css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franncottet/Web-Adelantosnow_Github.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franncottet/Web-Adelantosnow_Github/issues"
+  },
+  "homepage": "https://github.com/franncottet/Web-Adelantosnow_Github#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,18 @@
+.row {
+    @include flex_mixin:
+}
+/// Número de elementos máximos que voy a tener a lo ancho del layout
+/// @group layout
+$num_elementos: 8;
+
+///Función que devuelve la anchura correspondiente al elemento
+@function anchura_col($i) {
+    @return (100 / $num_elementos)*$i ;
+    }
+
+///Bucle para generar las clases para tamaños medios
+@for $i from 1 through $num_elementos {
+    .row > .col#{$i} {
+        width: #{anchura_col($i)} + “%”;
+    }
+}
