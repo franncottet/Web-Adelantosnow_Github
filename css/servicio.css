@@ -55,6 +55,7 @@ body {
         grid-row: 3/4;
     }
 
+    /*main*/ 
 
 
 /* HEADER */
@@ -100,7 +101,73 @@ body {
     color: #2F2F9E;
 }
 
+/*MAIN*/
 
+.container{
+    margin-top: 10rem;
+    font-size: 4rem;
+    color:#000000;
+}
+
+.Container-first {
+    margin-left: 7rem;
+    margin-right: 7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.texto1{
+    justify-content: flex-start;
+}
+
+.texto1 h2:hover{
+    color: #42BDEC;
+    transition: .2s;
+}
+
+
+
+.texto1 h2{
+    font-size: 7rem;
+}
+
+.imagen1{
+    height: 60rem;
+    justify-content: flex-end;
+}
+
+.imagen1:hover{
+    height: 65rem;
+    transition: .5s;
+}
+
+.Container-second {
+    margin-top: 15rem;
+    margin-left: 3rem;
+    margin-right: 7rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.texto2 h2{
+    font-size: 7rem;
+}
+
+.texto2 h2:hover{
+    color: #42BDEC;
+    transition: .2s;
+}
+
+.imagen2{
+    height: 50rem;
+    
+}
+
+.imagen2:hover{
+    height: 55rem;
+    transition: .5s;
+}
 
 /* FOOTER */
 

@@ -1,0 +1,47 @@
+/* Normalize */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globals */
+
+html {
+    font-size: 62.5%;
+    font-family: $font-primary;
+    color: $secondary;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100%;
+    background-color: $secondary;
+} 
+
+/* GRID */
+
+.grid-container{
+    
+    grid-template-rows: 10em auto 10em;
+    grid-template-columns: 10em auto 10em;
+   
+   
+    .header{
+        grid-column: 2/3;
+    }
+
+    .main{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    .footer-container{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+
+}

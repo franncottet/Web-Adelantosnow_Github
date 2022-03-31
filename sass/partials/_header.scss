@@ -1,0 +1,39 @@
+/* HEADER */
+
+.logo{
+    width: 11rem;
+    margin-left: 10rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_items {
+        display: flex;
+        margin-right: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            font-weight: 600;
+            font-size: 2.2rem;
+            margin: 0 3rem;
+
+            &:hover a{
+                color: #5959c9;
+                transition: .4s;
+            }
+
+            &active a{
+                color: #2F2F9E;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: rgb(7, 7, 7);
+            text-transform: uppercase;
+        }
+    }
+}
