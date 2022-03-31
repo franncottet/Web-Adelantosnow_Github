@@ -83,8 +83,6 @@ body {
     margin: 0 3rem;
 }
 
-
-
 .menu_items a{
     text-decoration: none;
     color: rgb(7, 7, 7);
@@ -127,6 +125,7 @@ body {
       flex-direction: column;
       justify-content: center;
   }
+  
   .texto h1{
   font-size: 3em;
   padding: 0.5em;
