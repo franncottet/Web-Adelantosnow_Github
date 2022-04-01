@@ -1,0 +1,21 @@
+
+@mixin container {
+    
+    margin-right: 7rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Container1 {
+      @include container;
+      margin-left: 7rem;
+}
+
+.Container2 {
+    @include container;
+    margin-top: 15rem;
+    margin-left: 3rem;
+    
+   
+}

@@ -1,11 +1,9 @@
-
-
 /* Variables */
 @import "../misc/variables";
-
 @import "../misc/normalize";
 @import "../misc/mediaqueries";
 @import "../partials/header";
+@import "../misc/mixins";
 @import "../partials/footer";
 
 
@@ -14,74 +12,67 @@
 
 /*MAIN*/
 
-.container{
+.container {
     margin-top: 10rem;
     font-size: 4rem;
-    color:#000000;
-}
-
-.Container1 {
-    margin-left: 7rem;
-    margin-right: 7rem;
-    display: flex;
-    justify-content: center;
-}
-
-.texto1{
-    justify-content: flex-start;
-}
-
-.texto1 h2:hover{
-    color: var(--Resaltado);
-    transition: .2s;
+    color: #000000;
 }
 
 
 
-.texto1 h2{
-    font-size: 7rem;
+
+.texto1 {
+
+
+    h2 {
+        font-size: map-get($text-styles, title);
+
+        &:hover {
+            color: $Resaltado;
+            transition: .2s;
+        }
+    }
+
+    p {
+        font-size: map-get($text-styles, parrafos);
+    }
+
 }
 
-.imagen1{
+.imagen1 {
     height: 60rem;
     justify-content: flex-end;
+
+    &:hover {
+        height: 65rem;
+        transition: .5s;
+    }
+
+
 }
 
-.imagen1:hover{
-    height: 65rem;
-    transition: .5s;
+.texto2 {
+    h2 {
+        font-size: map-get($text-styles, title);
+
+
+        &:hover {
+            color: $Resaltado;
+            transition: .2s;
+        }
+    }
+
+    p {
+        font-size: map-get($text-styles, parrafos);
+    }
 }
 
-.Container2 {
-    margin-top: 15rem;
-    margin-left: 3rem;
-    margin-right: 7rem;
-    display: flex;
-    justify-content: center;
+.imagen2 {
+    height: 45rem;
+
+    &:hover {
+        height: 47rem;
+        transition: .5s;
+    }
+
 }
-
-
-
-.texto2 h2{
-    font-size: 7rem;
-}
-
-.texto2 h2:hover{
-    color: var(--Resaltado);
-    transition: .2s;
-}
-
-.imagen2{
-    height: 50rem;
-    
-}
-
-.imagen2:hover{
-    height: 55rem;
-    transition: .5s;
-}
-
-
-
-
-
