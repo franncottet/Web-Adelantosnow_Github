@@ -134,7 +134,7 @@ body {
 
 
 
-.principal_texto h2{
+.principal_texto h1{
     background: #ccc;
     background: linear-gradient(15deg, black, #2F2F9E);
     -webkit-text-fill-color: transparent;
@@ -145,7 +145,7 @@ body {
     
 }
 
-.principal_texto h2:hover {
+.principal_texto h1:hover {
     background: #ccc;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(15deg, #2F2F9E, #000000);
@@ -192,7 +192,7 @@ body {
     
 }
 
-.box-resume_first h3 {
+.box-resume_first h2 {
     
     margin: 0 auto;
     font-size: 5rem;
@@ -200,7 +200,7 @@ body {
     
 }
 
-.box-resume_first h3 a{
+.box-resume_first h2 a{
     text-decoration: none;
     color: #e7e7e7;
 }
@@ -224,13 +224,13 @@ body {
     line-height: 20rem;
 }
 
-.box-resume_second h3{
+.box-resume_second h2{
     margin: 0 auto;
     font-size: 5rem;
     font-weight: 200;
 }
 
-.box-resume_second h3 a{
+.box-resume_second h2 a{
     text-decoration: none;
     color: #e7e7e7;
 }
@@ -248,8 +248,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.opinions h2{
-    
+.opinions h3{
+     
     color: #2F2F9E;
     font-weight: 500;
     margin-top: 20rem;
