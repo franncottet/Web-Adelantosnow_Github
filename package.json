@@ -6,7 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1" ,
     "build-sass": "node-sass --include-path scss sass/views/about.scss css/about.css",
-    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
+    "home-sass": "node-sass --include-path scss sass/views/home.scss css/home.css",
+    "watch_home-sass": "nodemon -e scss -x \"npm run home-sass\"",
+    "account-sass": "node-sass --include-path scss sass/views/account.scss css/account.css",
+    "watch_account-sass": "nodemon -e scss -x \"npm run account-sass\"",
+    "services-sass": "node-sass --include-path scss sass/views/services.scss css/services.css",
+    "watch_services-sass": "nodemon -e scss -x \"npm run services-sass\"",
+    "contact-sass": "node-sass --include-path scss sass/views/contact.scss css/contact.css",
+    "watch_contact-sass": "nodemon -e scss -x \"npm run contact-sass\""
   },
   "repository": {
     "type": "git",

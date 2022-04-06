@@ -13,17 +13,23 @@
 
     <header class="header">
 
-
-        <nav class="menu">
-            <a href="Index.html"><img class="logo" src="../../assets/image/Logo2.png" alt="Simbolo"></a>
-            <ul class="menu_items">
-                <li><a href="../../Index.html">Inicio</a></li>
-                <li><a href="Micuenta.html">Mi cuenta</a></li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="Servicio.html">Servicio</a></li>
-                <li class="active"><a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <section class="navbar-container">
+            <nav class="menu">
+                <a href="../../Index.html"><img class="logo" src="../../assets/image/Logo2.png" alt="Simbolo"></a>
+                <label for="menu-btn" class="nav-label">
+                    <img class="nav-img" src="../image/menu.svg" alt="menu">
+                </label>
+                <input type="checkbox" id="menu-btn" class="nav-input">
+                <div class="nav-menu">
+                    <ul class="menu_items">
+                        <li><a href="../../Index.html">Inicio</a></li>
+                        <li><a href="Micuenta.html">Mi cuenta</a></li>
+                        <li><a href="Nosotros.html">Nosotros</a></li>
+                        <li><a href="Servicio.html">Servicio</a></li>
+                        <li class="active"><a href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+        </section>
 
     </header>
 
@@ -33,7 +39,7 @@
         <section class="container">
 
             <div class="container-form">
-                <h1>Envianos tu mensaje, alguien de soporte se 
+                <h1>Envianos tu mensaje, alguien de soporte se
                     comunicará con vos en las proximas 24hs hábiles.</h1>
                 <form action="">
                     <div class="container-form_name">
@@ -49,20 +55,47 @@
 
                     <div class="container-form_message">
                         <h3>Tu mensaje:</h3>
-                        <textarea name="mensaje del usuario" rows="10" cols="40"> </textarea>
+                        <textarea name="mensaje del usuario"  rows="10" cols="40">  </textarea>
                     </div>
 
                     <br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Restablecer">
+                    <input class="submit" type="submit" value="Enviar">
+                    <input class="reset" type="reset" value="Restablecer">
 
                 </form>
             </div>
             <div class="container-info">
+                <h2>Nuestras redes sociales:</h2>
 
-            </div>
+                <div class="container-icons">
+                    <div class="container-icons-1">
+                        <p>Whatsapp</p><img src="../../assets/image/whatsapp_blanco.png" alt="Logo de Whatsapp">
+                    </div>
+                    <div class="container-icons-2">
+                        <p>Facebook</p><img src="../../assets/image/facebook_blanco.png" alt="Logo de Facebook">
+                    </div>
+                    <div class="container-icons-3">
+                        <p>Instagram</p><img src="../../assets/image/Instagram_blanco.png" alt="Logo de Instagram">
+                    </div>
+                    <div class="container-icons-4">
+                        <p>Twitter</p><img src="../../assets/image/twitter_blanco.png" alt="Logo de Twitter">
+                    </div>
+                    <h2>Datos de contacto:</h2>
+                    <div class="container-icons-5">
+                        <p>+543424669162 </p><img src="../../assets/image/Telephone.ico" alt="Telefono"> 
+                    </div>
+                    <div class="container-icons-6">
+                        <p>Avenida Facundo Zuviria 2352 </p><img src="../../assets/image/map.ico" alt="Telefono"> 
+                    </div>
+
+                   
+                
+                </div>
+            
+
+
         </section>
-        
+
 
     </main>
 
