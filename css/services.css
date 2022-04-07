@@ -1,11 +1,5 @@
 /* Variables */
-:root {
-  --principal: #2F2F9E;
-  --secondary: #e7e7e7;
-  --terciary: #000000;
-  --font-primary: "Inter", sans-serif;
-  --font-secondary: "Bowly One SC", cursive; }
-
+/* MAP */
 /* Normalize */
 *,
 *::after,
@@ -17,8 +11,8 @@
 /* Globals */
 html {
   font-size: 62.5%;
-  font-family: var(--font-primary);
-  color: var(--secondary); }
+  font-family: "Inter", sans-serif;
+  color: #e7e7e7; }
 
 body {
   font-family: 'Inter', sans-serif;
@@ -29,19 +23,15 @@ body {
 .grid-container {
   grid-template-rows: 10em auto 10em;
   grid-template-columns: 10em auto 10em; }
+  .grid-container .header {
+    grid-column: 2/3; }
+  .grid-container .main {
+    grid-column: 1/4;
+    grid-row: 2/3; }
+  .grid-container .footer-container {
+    grid-column: 1/4;
+    grid-row: 3/4; }
 
-.header {
-  grid-column: 2/3; }
-
-.main {
-  grid-column: 1/4;
-  grid-row: 2/3; }
-
-.footer-container {
-  grid-column: 1/4;
-  grid-row: 3/4; }
-
-/*main*/
 /* HEADER */
 .logo {
   width: 11rem;
@@ -82,6 +72,39 @@ body {
 
 .nav-input, .nav-label {
   display: none; }
+
+/* FOOTER */
+.footer-container {
+  display: flex;
+  width: 100%;
+  height: 30rem;
+  background-color: #2F2F9E;
+  margin-top: 20rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  align-content: center;
+  justify-content: center; }
+
+.footer {
+  margin-top: 7.5rem; }
+
+.footer p {
+  display: flex;
+  font-size: 2rem;
+  color: #e7e7e7;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 4rem; }
+
+.footer_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.footer_icons img {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: 5em; }
 
 /*MAIN*/
 .container {
@@ -130,39 +153,6 @@ body {
 .imagen2:hover {
   height: 45rem;
   transition: .5s; }
-
-/* FOOTER */
-.footer-container {
-  display: flex;
-  width: 100%;
-  height: 30rem;
-  background-color: #2F2F9E;
-  margin-top: 20rem;
-  margin-right: 0;
-  margin-bottom: 0;
-  align-content: center;
-  justify-content: center; }
-
-.footer {
-  margin-top: 7.5rem; }
-
-.footer p {
-  display: flex;
-  font-size: 2rem;
-  color: #e7e7e7;
-  justify-content: center;
-  align-content: center;
-  margin-bottom: 4rem; }
-
-.footer_icons {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.footer_icons img {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  width: 5em; }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {

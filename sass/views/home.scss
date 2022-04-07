@@ -1,30 +1,14 @@
-/* Variables */
-
-:root {
-    --principal: #2F2F9E;
-    --secondary: #e7e7e7;
-    --terciary: #000000;
-    --font-primary: "Inter", sans-serif;
-    --font-secondary: "Bowly One SC", cursive;
-}
-
-/* Normalize */
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+@import "../misc/variables";
+@import "../misc/normalize";
+@import "../partials/header";
 
 
 /* Globals */
 
 html {
     font-size: 62.5%;
-    font-family: var(--font-primary);
-    color: var(--secondary);
+    font-family: $font-primary;
+    color: $secondary;
 }
 
 
@@ -56,64 +40,6 @@ body {
         grid-row: 3/4;
     }
 
-/* HEADER */
-
-
-
-.logo{
-    width: 11rem;
-    margin-left: 10rem;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu_items {
-    display: flex;
-    margin-right: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu_items li {
-    font-weight: 600;
-    font-size: 2.2rem;
-    margin: 0 3rem;
-}
-
-
-
-.menu_items a{
-    text-decoration: none;
-    color: rgb(7, 7, 7);
-    text-transform: uppercase;
-}
- 
-.menu_items li:hover a{
-    color: #5959c9;
-    transition: .4s;
-}
-
-.menu_items li.active a{
-    color: #2F2F9E;
-}
-
-
-/*burger*/
-
-.contenedor-logo{
-    margin:auto;
-	text-align:center;
-}
-
-
-
-.nav-input, .nav-label{
-    display: none;
-}
 
 
 /*TEXTO Y PARRAFO PRINCIPAL / DESPUES INCLUIRÁ ANIMACIÓN*/

@@ -29,9 +29,9 @@
 
 .nav-menu{
     position: fixed;
-    top: 100px;
+    top: 200px;
     bottom: 0;
-    background-color: var(--secondary);
+    background-color: $secondary;
     width: 100%;
     left: 0;
     display: flex;

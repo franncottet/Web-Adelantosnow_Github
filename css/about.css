@@ -49,9 +49,9 @@ body {
     width: 10rem; }
   .nav-menu {
     position: fixed;
-    top: 100px;
+    top: 200px;
     bottom: 0;
-    background-color: var(--secondary);
+    background-color: #e7e7e7;
     width: 100%;
     left: 0;
     display: flex;
@@ -96,24 +96,29 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .menu_items {
-    display: flex;
-    margin-right: 2rem;
-    justify-content: center;
-    align-items: center; }
-    .menu_items li {
-      font-weight: 600;
-      font-size: 2.2rem;
-      margin: 0 3rem; }
-      .menu_items li:hover a {
-        color: #5959c9;
-        transition: .4s; }
-      .menu_items liactive a {
-        color: #2F2F9E; }
-    .menu_items a {
-      text-decoration: none;
-      color: #070707;
-      text-transform: uppercase; }
+
+.menu_items {
+  display: flex;
+  margin-right: 2rem;
+  justify-content: center;
+  align-items: center; }
+
+.menu_items li {
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin: 0 3rem; }
+
+.menu_items a {
+  text-decoration: none;
+  color: #070707;
+  text-transform: uppercase; }
+
+.menu_items li:hover a {
+  color: #5959c9;
+  transition: .4s; }
+
+.menu_items li.active a {
+  color: #2F2F9E; }
 
 /*burger*/
 .contenedor-logo {
