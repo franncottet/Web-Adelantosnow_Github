@@ -1,8 +1,8 @@
 /* Variables */
 @import "../misc/variables";
 @import "../misc/normalize";
-@import "../misc/mediaqueries";
 @import "../partials/header";
+@import "../misc/mediaqueries";
 @import "../misc/mixins";
 @import "../partials/footer";
 
@@ -13,12 +13,15 @@
 /*MAIN*/
 
 .container {
-    margin-top: 10rem;
+    margin-top: 20rem;
     font-size: 4rem;
     color: #000000;
+    
 }
 
-
+.imagen3{
+    display: none;
+}
 
 
 .texto1 {
@@ -75,4 +78,58 @@
         transition: .5s;
     }
 
+}
+
+/* MEDIA QUERIES EXTRA */
+
+
+@media screen and (max-width: 768px){
+
+    .imagen3{
+        display: flex;
+        width: 100rem;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-left: 10rem;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        margin-left: 6rem;
+    }
+    
+    
+.imagen1{
+    display: none;
+
+}
+
+.imagen2{
+    display: none;
+}
+
+
+.texto1{
+    justify-content: center;
+    align-content: center;
+    margin-left: 4rem;
+}
+
+.texto2{
+    justify-content: center;
+    align-content: center;
+    margin-left: 5rem;
+}
+}
+
+
+@media screen and (max-width: 590px){
+
+    .imagen3{
+        margin-left: 7rem;
+    }
 }

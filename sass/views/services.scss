@@ -29,12 +29,14 @@
     margin-right: 7rem;
     display: flex;
     justify-content: center;
+    
 }
 
 .texto1{
     
     font-size: 3rem;
     margin-left: 3rem;
+    
 }
 
 
@@ -47,6 +49,7 @@
 .imagen1{
     height: 40rem;
     justify-content: flex-end;
+    float: left;
 }
 
 .imagen1:hover{
@@ -97,6 +100,14 @@
 
 
 @media screen and (max-width: 768px){
+
+    html{
+        font-size: 30%;
+    }
+
+    .container h2{
+        font-size: 4rem
+    }
     
 .nav-label{
     display: block;
@@ -104,7 +115,25 @@
     cursor: pointer;
 }
 
+.Container-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
 
+.Container-second {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.imagen2{
+    margin-bottom: 5rem;
+}
 
 
 .nav-img{
@@ -118,7 +147,7 @@
     position: fixed;
     top: 100px;
     bottom: 0;
-    background-color: var(--secondary);
+    background-color: $secondary;
     width: 100%;
     left: 0;
     display: flex;
@@ -170,9 +199,33 @@
     }
 }
 
+@media screen and (max-width: 590px){
+    
+    
+
+    .imagen1{
+        height: 30rem;
+        
+    }
+
+    .imagen2{
+        height: 30rem;
+        
+    }
+}
+
 @media screen and (max-width: 480px){
     
     html{
-        font-size: 20%;
+        font-size: 10%;
     }
+}
+
+@media screen and (max-width: 1200px){
+    
+    html{
+        font-size: 40%;
+    }
+    
+
 }

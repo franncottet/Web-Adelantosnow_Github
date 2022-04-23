@@ -17,6 +17,7 @@
     height: 100em;
     padding: 8% 0 0;
     margin: auto;
+   
   }
   .form {
     display: flex;
@@ -126,7 +127,7 @@
     position: fixed;
     top: 100px;
     bottom: 0;
-    background-color: var(--secondary);
+    background-color: $secondary;
     width: 100%;
     left: 0;
     display: flex;

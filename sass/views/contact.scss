@@ -204,13 +204,37 @@ margin-right: 2rem;
 @media screen and (max-width: 768px){
     
     .container{
-        width: 80%;
         
+        flex-direction: column;
+        margin-bottom: 40rem;
+        align-content: center;
     }
     
-  
+    
 
 
+    html{
+        font-size: 30%;
+    }
+
+    .container-form{
+        min-width: 80%;
+        width: 80%;
+        height: 80rem;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4.5em;
+        margin: 0 auto;
+        font-family: $font-primary;
+        margin-bottom: 2.5rem;
+    }  
+
+    .container-info{
+        justify-content: center;
+        margin: 0 auto;
+    }
 
 .nav-label{
     display: block;
@@ -232,7 +256,7 @@ margin-right: 2rem;
     position: fixed;
     top: 100px;
     bottom: 0;
-    background-color: var(--secondary);
+    background-color: $secondary;
     width: 100%;
     left: 0;
     display: flex;
@@ -287,6 +311,37 @@ margin-right: 2rem;
 @media screen and (max-width: 480px){
     
     html{
-        font-size: 20%;
+        font-size: 10%;
     }
+    .container{
+        width: 100%;
+
+    }
+
+  
 }
+
+@media screen and (max-width: 1200px){
+    
+    html{
+        font-size: 40%;
+    }
+    .container{
+        width: 80%;
+        
+        
+    }
+
+}
+
+@media screen and (max-width: 590px){
+    
+    .container-form{
+        width: 100%;
+    }
+    
+
+}
+
+
+
