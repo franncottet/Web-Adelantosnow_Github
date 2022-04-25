@@ -2,6 +2,7 @@
 @import "../misc/normalize";
 @import "../partials/header";
 @import "../partials/footer";
+@import "../misc/mediaqueries";
 
 
 
@@ -13,175 +14,92 @@
 
 
 .login-page {
-    width: 70em;
-    height: 100em;
-    padding: 8% 0 0;
-    margin: auto;
-   
-  }
+  width: 70em;
+  height: 100em;
+  padding: 8% 0 0;
+  margin: auto;
+
   .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: #FFFFFF;
-    margin: 0 auto ;
+    margin: 0 auto;
     padding: 4.5em;
     text-align: center;
     box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2), 0 2em 3em 0 rgba(0, 0, 0, 0.24);
-  }
 
-  .texto{
+    .texto {
       display: flex;
       flex-direction: column;
       justify-content: center;
-  }
-  
-  .texto h1{
-  font-size: 3em;
-  padding: 0.5em;
-  color:#000000;
-  
-  }
 
-  .texto p{
-    font-size: 1.5em;
-    color: #242424;
-    margin-bottom: 2em;
-    margin-left: 1em;
-    
-    
-  }
+      h1 {
+        font-size: 3em;
+        padding: 0.5em;
+        color: #000000;
+
+      }
+
+      p {
+        font-size: 1.5em;
+        color: #242424;
+        margin-bottom: 2em;
+        margin-left: 1em;
 
 
-  .form input {
-    font-family: "Roboto", sans-serif;
-    width: 70%;
-    border: 1;
-    border-color: #e4e4e4;
-    border-radius: 0.5em;
-    margin-bottom: 1.5em;
-    padding: 1.5em;
-    font-size: 1.4em;
-  }
-  .form button {
-    font-family: "Inter", sans-serif;
-    background: linear-gradient(135deg, #000000 0%, #2F2F9E 100%);
-    border-radius: 8px;
-    width: 50%;
-    padding: 1.2em;
-    color: #FFFFFF;
-    font-size: 1.4em;
-    cursor: pointer;
-  }
-  .form button:hover,.form button:active,.form button:focus {
-    background: linear-gradient(135deg, #000000 0%, #151549 100%);
-    transition: .3s;
-  }
-  .form .message {
-    margin: 1.5em 0 0;
-    color: #303030;
-    font-size: 1.3em;
-  }
-  .form .message a {
-    color: #4dbeff;
-    text-decoration: none;
-  }
-  
-  
-  
-
-
-
-/* MEDIA QUERIES */
-
-
-
-@media screen and (min-width: 768px){
-    
-    .nav-desplegable{
-        display: none;
-    }
-}
-
-
-
-@media screen and (max-width: 768px){
-    
-.nav-label{
-    display: block;
-    
-    cursor: pointer;
-}
-
-
-
-
-.nav-img{
-    display: flex;
-    justify-content: center;
-    margin-top: 10rem;
-    width: 10rem;
-}
-
-.nav-menu{
-    position: fixed;
-    top: 100px;
-    bottom: 0;
-    background-color: $secondary;
-    width: 100%;
-    left: 0;
-    display: flex;
-    justify-content: space-evenly;
-    text-decoration: none;
-    flex-direction: column;
-    align-items: center;
-    clip-path: circle(0 at center);
-    transition: .2s
-}
-
-.menu_items{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.menu_items li{
-    font-size: 7rem;
-    
-}
-
-
-
-.nav-input:checked + .nav-menu {
-    clip-path: circle(100% at center);
-}
-    
-    /*.navbar-container{
-        display: none;
-    }*/
-
-html{
-        font-size: 30%;
+      }
     }
 
-   
-    
-    .logo {
-        position: absolute;
-        width: 15rem;
-        margin-top: 3em;
-        margin-bottom: 3em;
-        margin:auto;
-        padding-left: 4rem;
-        text-align: center;
-
+    input {
+      font-family: "Roboto", sans-serif;
+      width: 70%;
+      border: 1;
+      border-color: #e4e4e4;
+      border-radius: 0.5em;
+      margin-bottom: 1.5em;
+      padding: 1.5em;
+      font-size: 1.4em;
     }
+
+    button {
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(135deg, #000000 0%, #2F2F9E 100%);
+      border-radius: 8px;
+      width: 50%;
+      padding: 1.2em;
+      color: #FFFFFF;
+      font-size: 1.4em;
+      cursor: pointer;
+
+      &:hover,
+      .form button:active,
+      .form button:focus {
+        background: linear-gradient(135deg, #000000 0%, #151549 100%);
+        transition: .3s;
+      }
+    }
+
+    .message {
+      margin: 1.5em 0 0;
+      color: #303030;
+      font-size: 1.3em;
+
+      a {
+        color: #4dbeff;
+        text-decoration: none;
+      }
+    }
+  }
+
 }
 
-@media screen and (max-width: 480px){
-    
-    html{
-        font-size: 20%;
-    }
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 768px) {
+
+  html {
+      font-size: 30%;
+  }
 }

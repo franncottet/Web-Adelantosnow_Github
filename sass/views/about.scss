@@ -2,9 +2,9 @@
 @import "../misc/variables";
 @import "../misc/normalize";
 @import "../partials/header";
-@import "../misc/mediaqueries";
 @import "../misc/mixins";
 @import "../partials/footer";
+@import "../misc/mediaqueries";
 
 
 
@@ -85,9 +85,16 @@
 
 @media screen and (max-width: 768px){
 
+    
+
+    html {
+        font-size: 30%;
+    }
+  
+
     .imagen3{
         display: flex;
-        width: 100rem;
+        width: 80rem;
         justify-content: center;
         align-content: center;
         text-align: center;

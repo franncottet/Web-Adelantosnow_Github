@@ -107,78 +107,14 @@ body {
   margin-right: 5rem;
   width: 5em; }
 
-/* FORMULARIO INICIO DE SESIÓN */
-.login-page {
-  width: 70em;
-  height: 100em;
-  padding: 8% 0 0;
-  margin: auto; }
-
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #FFFFFF;
-  margin: 0 auto;
-  padding: 4.5em;
-  text-align: center;
-  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2), 0 2em 3em 0 rgba(0, 0, 0, 0.24); }
-
-.texto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.texto h1 {
-  font-size: 3em;
-  padding: 0.5em;
-  color: #000000; }
-
-.texto p {
-  font-size: 1.5em;
-  color: #242424;
-  margin-bottom: 2em;
-  margin-left: 1em; }
-
-.form input {
-  font-family: "Roboto", sans-serif;
-  width: 70%;
-  border: 1;
-  border-color: #e4e4e4;
-  border-radius: 0.5em;
-  margin-bottom: 1.5em;
-  padding: 1.5em;
-  font-size: 1.4em; }
-
-.form button {
-  font-family: "Inter", sans-serif;
-  background: linear-gradient(135deg, #000000 0%, #2F2F9E 100%);
-  border-radius: 8px;
-  width: 50%;
-  padding: 1.2em;
-  color: #FFFFFF;
-  font-size: 1.4em;
-  cursor: pointer; }
-
-.form button:hover, .form button:active, .form button:focus {
-  background: linear-gradient(135deg, #000000 0%, #151549 100%);
-  transition: .3s; }
-
-.form .message {
-  margin: 1.5em 0 0;
-  color: #303030;
-  font-size: 1.3em; }
-
-.form .message a {
-  color: #4dbeff;
-  text-decoration: none; }
-
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
   .nav-desplegable {
     display: none; } }
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 30%; }
   .nav-label {
     display: block;
     cursor: pointer; }
@@ -212,8 +148,6 @@ body {
   /*.navbar-container{
         display: none;
     }*/
-  html {
-    font-size: 30%; }
   .logo {
     position: absolute;
     width: 15rem;
@@ -226,3 +160,71 @@ body {
 @media screen and (max-width: 480px) {
   html {
     font-size: 20%; } }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 40%; } }
+
+/* FORMULARIO INICIO DE SESIÓN */
+.login-page {
+  width: 70em;
+  height: 100em;
+  padding: 8% 0 0;
+  margin: auto; }
+  .login-page .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FFFFFF;
+    margin: 0 auto;
+    padding: 4.5em;
+    text-align: center;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2), 0 2em 3em 0 rgba(0, 0, 0, 0.24); }
+    .login-page .form .texto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .login-page .form .texto h1 {
+        font-size: 3em;
+        padding: 0.5em;
+        color: #000000; }
+      .login-page .form .texto p {
+        font-size: 1.5em;
+        color: #242424;
+        margin-bottom: 2em;
+        margin-left: 1em; }
+    .login-page .form input {
+      font-family: "Roboto", sans-serif;
+      width: 70%;
+      border: 1;
+      border-color: #e4e4e4;
+      border-radius: 0.5em;
+      margin-bottom: 1.5em;
+      padding: 1.5em;
+      font-size: 1.4em; }
+    .login-page .form button {
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(135deg, #000000 0%, #2F2F9E 100%);
+      border-radius: 8px;
+      width: 50%;
+      padding: 1.2em;
+      color: #FFFFFF;
+      font-size: 1.4em;
+      cursor: pointer; }
+      .login-page .form button:hover,
+      .login-page .form button .form button:active,
+      .login-page .form button .form button:focus {
+        background: linear-gradient(135deg, #000000 0%, #151549 100%);
+        transition: .3s; }
+    .login-page .form .message {
+      margin: 1.5em 0 0;
+      color: #303030;
+      font-size: 1.3em; }
+      .login-page .form .message a {
+        color: #4dbeff;
+        text-decoration: none; }
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 30%; } }

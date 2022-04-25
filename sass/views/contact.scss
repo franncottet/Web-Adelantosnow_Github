@@ -2,6 +2,7 @@
 @import "../misc/normalize";
 @import "../partials/header";
 @import "../partials/footer";
+@import "../misc/mediaqueries";
 
 
 
@@ -9,181 +10,180 @@
 
 /*MAIN*/
 
-/*.main{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-   }
-*/
 
-.main{
-    
+
+.main {
+
     display: flex;
     color: $terciary;
+
+    .container {
+        display: flex;
+        width: 70%;
+        height: 110rem;
+        padding: 8% 0 0;
+        margin: auto;
+        flex-direction: row;
+
+        &-form {
+            width: 70%;
+            height: 80rem;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4.5em;
+            margin: 0 auto;
+            font-family: $font-primary;
+
+            div {
+                margin-bottom: 3rem;
+            }
+
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+            }
+
+            &_name input {
+                width: 50%;
+                height: 4rem;
+                font-family: $font-primary;
+
+            }
+
+            &_email input {
+                width: 50%;
+                height: 4rem;
+                font-family: $font-primary;
+            }
+
+            &_message {
+                width: 70%;
+            }
+
+            .submit {
+                width: 30%;
+                height: 8%;
+                margin-right: 3rem;
+                font-family: $font-primary;
+                color: $secondary;
+                background-color: $principal;
+                border-radius: 1.5rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .reset {
+                width: 30%;
+                height: 8%;
+                font-family: $font-primary;
+                color: $secondary;
+                background-color: $principal;
+                border-radius: 1.5rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70rem;
+            height: 80rem;
+            background-color: #0E0E52;
+            color: $secondary;
+
+            h2 {
+                display: flex;
+
+                margin-top: 6rem;
+                margin-bottom: 3rem;
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 2.5rem;
+                font-weight: 100;
+            }
+        }
+
+        &-icons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 4rem;
+                margin-right: 3rem;
+
+            }
+
+            &-1 {
+                display: flex;
+                flex-direction: row-reverse;
+
+
+                margin-bottom: 5rem;
+            }
+
+            &-2 {
+                display: flex;
+                flex-direction: row-reverse;
+                margin-bottom: 5rem;
+            }
+
+            &-3 {
+                display: flex;
+                flex-direction: row-reverse;
+                margin-bottom: 5rem;
+            }
+
+            &-4 {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            &-5 {
+                display: flex;
+                flex-direction: row-reverse;
+                margin-bottom: 3rem;
+            }
+
+            &-6 {
+                display: flex;
+                flex-direction: row-reverse;
+                margin-bottom: 5rem;
+
+                img {
+                    margin-right: 2rem;
+                }
+
+            }
+        }
+
+    }
+
+
+
 }
 
-.container{
-    display: flex;
-    width: 70%;
-    height: 110rem;
-    padding: 8% 0 0;
-    margin: auto;
-    flex-direction: row;
-    
-    
-}
 
-.container-form{
-    width: 70%;
-    height: 80rem;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 4.5em;
-    margin: 0 auto ;
-    font-family: $font-primary
-}
-
-
-.container-form h3{
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.container-form h1{
-    font-size: 2.5rem;
-    
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-}
-
-.container-form div{
-    margin-bottom: 3rem;
-}
-
-.container-form_name input{
-    width: 50%;
-    height: 4rem;
-    font-family: $font-primary;
-    
-}
-
-.container-form_email input{
-    width: 50%;
-    height: 4rem;
-    font-family: $font-primary;
-}
-
-.container-form_message{
-    width: 70%;
-}
-
-.submit{
-    width: 30%;
-    height: 8%;
-    margin-right: 3rem;
-    font-family: $font-primary;
-    color: $secondary;
-    background-color: $principal;
-    border-radius: 1.5rem;
-    
-}
-
-.submit:hover{
-    cursor: pointer;
-}
-
-.reset{
-    width: 30%;
-    height: 8%;
-    font-family: $font-primary;
-    color: $secondary;
-    background-color: $principal;
-    border-radius: 1.5rem;
-}
-
-.reset:hover{
-    cursor: pointer;
-}
-
-.container-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70rem;
-    height: 80rem;
-    background-color: #0E0E52;
-    color: $secondary;
-}
-
-.container-info h2{
-   display: flex;
-   
-   margin-top: 6rem;
-   margin-bottom: 3rem;
-   font-size: 2.5rem;
-}
-
-.container-icons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.container-icons-1{
-    display: flex;
-    flex-direction: row-reverse;
-  
-    
-    margin-bottom: 5rem;
-}
-
-.container-info p{
-    font-size: 2.5rem;
-    font-weight: 100;
-}
-
-.container-icons-2{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 5rem;
-}
-
-.container-icons-3{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 5rem;
-}
-
-.container-icons-4{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.container-icons-5{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 3rem;
-}
-
-.container-icons-6{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 5rem;
-    
-}
-.container-icons-6 img{
-margin-right: 2rem;
-}
-
-.container-icons img{
-    width: 4rem;
-    margin-right: 3rem;
-
-}
 
 
 
@@ -192,32 +192,27 @@ margin-right: 2rem;
 
 
 
-@media screen and (min-width: 768px){
-    
-    .nav-desplegable{
-        display: none;
-    }
-}
 
 
 
-@media screen and (max-width: 768px){
-    
-    .container{
-        
+
+@media screen and (max-width: 768px) {
+
+    .container {
+
         flex-direction: column;
         margin-bottom: 40rem;
         align-content: center;
     }
-    
-    
 
 
-    html{
+
+
+    html {
         font-size: 30%;
     }
 
-    .container-form{
+    .container-form {
         min-width: 80%;
         width: 80%;
         height: 80rem;
@@ -229,119 +224,41 @@ margin-right: 2rem;
         margin: 0 auto;
         font-family: $font-primary;
         margin-bottom: 2.5rem;
-    }  
+    }
 
-    .container-info{
+    .container-info {
         justify-content: center;
         margin: 0 auto;
     }
 
-.nav-label{
-    display: block;
-    
-    cursor: pointer;
 }
 
-
-
-
-.nav-img{
-    display: flex;
-    justify-content: center;
-    margin-top: 10rem;
-    width: 10rem;
-}
-
-.nav-menu{
-    position: fixed;
-    top: 100px;
-    bottom: 0;
-    background-color: $secondary;
-    width: 100%;
-    left: 0;
-    display: flex;
-    justify-content: space-evenly;
-    text-decoration: none;
-    flex-direction: column;
-    align-items: center;
-    clip-path: circle(0 at center);
-    transition: .2s
-}
-
-.menu_items{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.menu_items li{
-    font-size: 7rem;
-    
-}
-
-
-
-.nav-input:checked + .nav-menu {
-    clip-path: circle(100% at center);
-}
-    
-    /*.navbar-container{
-        display: none;
-    }*/
-
-    html{
-        font-size: 30%;
-    }
+@media screen and (max-width: 480px) {
 
    
-    
-    .logo {
-        position: absolute;
-        width: 15rem;
-        margin-top: 3em;
-        margin-bottom: 3em;
-        margin:auto;
-        padding-left: 4rem;
-        text-align: center;
 
-    }
-}
-
-@media screen and (max-width: 480px){
-    
-    html{
-        font-size: 10%;
-    }
-    .container{
+    .container {
         width: 100%;
 
     }
 
-  
+
 }
 
-@media screen and (max-width: 1200px){
-    
-    html{
-        font-size: 40%;
-    }
-    .container{
+@media screen and (max-width: 1200px) {
+
+
+    .container {
         width: 80%;
-        
-        
     }
 
 }
 
-@media screen and (max-width: 590px){
-    
-    .container-form{
+@media screen and (max-width: 590px) {
+
+    .container-form {
         width: 100%;
     }
-    
+
 
 }
-
-
-

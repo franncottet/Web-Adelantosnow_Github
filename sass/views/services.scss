@@ -2,6 +2,7 @@
 @import "../misc/normalize";
 @import "../partials/header";
 @import "../partials/footer";
+@import "../misc/mediaqueries";
 
 
 
@@ -9,80 +10,80 @@
 
 /*MAIN*/
 
-.container{
+.container {
     margin-top: 10rem;
     font-size: 4rem;
-    color:#000000;
+    color: #000000;
+
+    h2 {
+        display: flex;
+
+        margin-bottom: 7rem;
+        font-size: 6rem;
+        justify-content: center;
+
+    }
+
+    &-first {
+        margin-left: 7rem;
+        margin-right: 7rem;
+        display: flex;
+        justify-content: center;
+
+        .texto1 {
+
+            font-size: 3rem;
+            margin-left: 3rem;
+
+        }
+
+        .imagen1 {
+            height: 40rem;
+            justify-content: flex-end;
+            float: left;
+
+            &:hover {
+                height: 45rem;
+                transition: .5s;
+            }
+        }
+
+
+    }
+
+    &-second {
+        margin-top: 10rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        display: flex;
+        justify-content: center;
+
+        .texto2 {
+            font-size: 3rem;
+            margin-right: 3rem;
+        }
+
+
+
+
+        .imagen2 {
+            height: 40rem;
+
+            &:hover {
+                height: 45rem;
+                transition: .5s;
+            }
+        }
+
+
+    }
+
+
+
+
+
 }
 
-.container h2{
-    display: flex;
-    
-    margin-bottom: 7rem;
-    font-size: 6rem;
-    justify-content: center;
-    
-}
-
-.Container-first {
-    margin-left: 7rem;
-    margin-right: 7rem;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.texto1{
-    
-    font-size: 3rem;
-    margin-left: 3rem;
-    
-}
-
-
-
-
-
-
-
-
-.imagen1{
-    height: 40rem;
-    justify-content: flex-end;
-    float: left;
-}
-
-.imagen1:hover{
-    height: 45rem;
-    transition: .5s;
-}
-
-.Container-second {
-    margin-top: 10rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    display: flex;
-    justify-content: center;
-}
-
-
-.texto2{
-   font-size: 3rem;
-   margin-right: 3rem;
-}
-
-
-
-
-.imagen2{
-    height: 40rem;
-    
-}
-
-.imagen2:hover{
-    height: 45rem;
-    transition: .5s;
-}
 
 
 
@@ -90,142 +91,62 @@
 
 
 
-@media screen and (min-width: 768px){
-    
-    .nav-desplegable{
-        display: none;
-    }
-}
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
-    html{
+    html {
         font-size: 30%;
     }
 
-    .container h2{
+    .container h2 {
         font-size: 4rem
     }
+
     
-.nav-label{
-    display: block;
-    
-    cursor: pointer;
-}
 
-.Container-first {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
+    .container-first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-.Container-second {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.imagen2{
-    margin-bottom: 5rem;
-}
-
-
-.nav-img{
-    display: flex;
-    justify-content: center;
-    margin-top: 10rem;
-    width: 10rem;
-}
-
-.nav-menu{
-    position: fixed;
-    top: 100px;
-    bottom: 0;
-    background-color: $secondary;
-    width: 100%;
-    left: 0;
-    display: flex;
-    justify-content: space-evenly;
-    text-decoration: none;
-    flex-direction: column;
-    align-items: center;
-    clip-path: circle(0 at center);
-    transition: .2s
-}
-
-.menu_items{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.menu_items li{
-    font-size: 7rem;
-    
-}
-
-
-
-.nav-input:checked + .nav-menu {
-    clip-path: circle(100% at center);
-}
-    
-    /*.navbar-container{
-        display: none;
-    }*/
-
-    html{
-        font-size: 30%;
     }
+
+    .container-second {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .imagen2 {
+        margin-bottom: 5rem;
+    }
+
 
    
-    
-    .logo {
-        position: absolute;
-        width: 15rem;
-        margin-top: 3em;
-        margin-bottom: 3em;
-        margin:auto;
-        padding-left: 4rem;
-        text-align: center;
 
-    }
+
+
 }
 
-@media screen and (max-width: 590px){
-    
-    
+@media screen and (max-width: 590px) {
 
-    .imagen1{
+
+
+    .imagen1 {
         height: 30rem;
-        
+
     }
 
-    .imagen2{
+    .imagen2 {
         height: 30rem;
-        
+
     }
 }
 
-@media screen and (max-width: 480px){
-    
-    html{
-        font-size: 10%;
-    }
-}
 
-@media screen and (max-width: 1200px){
-    
-    html{
-        font-size: 40%;
-    }
-    
 
-}
